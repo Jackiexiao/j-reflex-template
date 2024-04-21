@@ -1,4 +1,5 @@
 import reflex as rx
+from jweb.components.color_mode_button import color_mode_button
 
 
 def sidebar_link(text: str, href: str, icon: str):
@@ -62,8 +63,9 @@ jweb_sidebar = sidebar(
     sidebar_link(text="Jweb", href="/", icon="bar_chart_3"),
     sidebar_link(text="Tools", href="/tools", icon="settings"),
     sidebar_link(text="Team", href="/team", icon="users"),
+    sidebar_link(text="Form", href="/tts", icon="table_2"),
     logo_src="/logo.jpg",
-    heading="REFLEX",
+    heading="JwebDemo",
 )
 
 
@@ -91,8 +93,10 @@ def navbar(heading: str) -> rx.Component:
             ),
             variant="soft",
         ),
+        color_mode_button(),
         position="fixed",
         width="calc(100% - 250px)",
+        align="center",
         top="0px",
         z_index="1000",
         padding_x="2em",

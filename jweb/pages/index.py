@@ -56,11 +56,11 @@ def content_grid():
 @template
 def index() -> rx.Component:
     return rx.box(
-            navbar(heading="Jweb"),
-            rx.box(
-                content_grid(),
-                margin_top="calc(50px + 2em)",
-                padding="2em",
-            ),
-            padding_left="250px",
-        )
+        navbar(heading="Jweb"),
+        rx.box(
+            content_grid(),
+            margin_top="calc(50px + 2em)",
+            padding="2em",
+        ),
+        padding_left="250px",
+    )
