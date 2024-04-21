@@ -3,7 +3,7 @@ from typing import Callable
 import reflex as rx
 
 from jweb.navigation import jweb_sidebar
-from jweb.styles import BACKGROUND_COLOR, FONT_FAMILY
+from jweb.styles import BACKGROUND_COLOR
 
 
 def template(page: Callable[[], rx.Component]) -> rx.Component:
@@ -12,6 +12,5 @@ def template(page: Callable[[], rx.Component]) -> rx.Component:
         page(),
         rx.logo(),
         background_color=BACKGROUND_COLOR,
-        font_family=FONT_FAMILY,
         padding_bottom="4em",
     )

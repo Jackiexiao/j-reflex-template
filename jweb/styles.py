@@ -11,5 +11,4 @@ THEME = rx.theme(
     panel_background="solid",
 )
 
-FONT_FAMILY = "Microsoft YaHei"
 BACKGROUND_COLOR = "var(--accent-2)"

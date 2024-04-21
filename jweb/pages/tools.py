@@ -3,6 +3,7 @@ import reflex as rx
 from jweb.navigation import navbar
 from jweb.template import template
 
+
 @template
 def tools() -> rx.Component:
     return rx.box(

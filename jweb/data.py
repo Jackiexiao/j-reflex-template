@@ -1,6 +1,7 @@
 """Mock data to populate the jweb charts and tables."""
 
 import reflex as rx
+
 from jweb.graphs import Area, Line
 
 stat_card_data = [

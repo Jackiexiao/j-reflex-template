@@ -1,7 +1,4 @@
 import reflex as rx
-from reflex.components import lucide
-
-from jweb.styles import FONT_FAMILY
 
 
 def sidebar_link(text: str, href: str, icon: str):
@@ -17,7 +14,6 @@ def sidebar_link(text: str, href: str, icon: str):
             spacing="3",
             align="baseline",
             direction="row",
-            font_family=FONT_FAMILY,
         ),
         href=href,
         width="100%",
@@ -40,7 +36,6 @@ def sidebar(
             rx.image(src=logo_src, height="28px", border_radius="8px"),
             rx.heading(
                 heading,
-                font_family=FONT_FAMILY,
                 size="7",
             ),
             width="100%",
@@ -78,14 +73,13 @@ class State(rx.State):
 
 def navbar(heading: str) -> rx.Component:
     return rx.hstack(
-        rx.heading(heading, font_family=FONT_FAMILY, size="7"),
+        rx.heading(heading, size="7"),
         rx.spacer(),
         rx.menu.root(
             rx.menu.trigger(
                 rx.button(
                     "Menu",
-                    lucide.icon(tag="chevron_down", weight=16, height=16),
-                    font_family=FONT_FAMILY,
+                    rx.icon("chevron-down", weight=16, height=16),
                     variant="soft",
                 ),
             ),
@@ -93,11 +87,9 @@ def navbar(heading: str) -> rx.Component:
                 rx.menu.item("Settings"),
                 rx.menu.item("Profile"),
                 rx.menu.item("Logout"),
-                font_family=FONT_FAMILY,
                 variant="soft",
             ),
             variant="soft",
-            font_family=FONT_FAMILY,
         ),
         position="fixed",
         width="calc(100% - 250px)",

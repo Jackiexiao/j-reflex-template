@@ -1,12 +1,13 @@
 """The main index page."""
 
 import reflex as rx
+
 from jweb.data import (
+    area_chart_data,
+    areas,
     line_chart_data,
     lines,
     pie_chart_data,
-    area_chart_data,
-    areas,
     stat_card_data,
     tabular_data,
 )
