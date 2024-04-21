@@ -1,4 +1,5 @@
 """Library of customized graphs and tables for the jweb."""
+
 import reflex as rx
 
 

@@ -1,19 +1,16 @@
 """The main Jweb App."""
 
-from rxconfig import config
-
 import reflex as rx
 
-from jweb.styles import BACKGROUND_COLOR, FONT_FAMILY, THEME, STYLESHEETS
-
-from jweb.pages.tools import tools
-from jweb.pages.team import team
 from jweb.pages.index import index
+from jweb.pages.team import team
+from jweb.pages.tools import tools
+from jweb.styles import THEME
 
 # Create app instance and add index page.
 app = rx.App(
     theme=THEME,
-    stylesheets=STYLESHEETS,
+    font_family="Microsoft YaHei",
 )
 
 app.add_page(index, route="/")

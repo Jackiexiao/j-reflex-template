@@ -1,6 +1,6 @@
 """The style classes and constants for the Jweb App."""
 
-from reflex.components.radix import themes as rx
+import reflex as rx
 
 THEME = rx.theme(
     appearance="light",
@@ -11,7 +11,5 @@ THEME = rx.theme(
     panel_background="solid",
 )
 
-STYLESHEETS = ["https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"]
-
-FONT_FAMILY = "Share Tech Mono"
+FONT_FAMILY = "Microsoft YaHei"
 BACKGROUND_COLOR = "var(--accent-2)"
