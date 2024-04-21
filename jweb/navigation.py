@@ -1,7 +1,7 @@
 import reflex as rx
 from reflex.components import lucide
 
-from dashboard.styles import FONT_FAMILY
+from jweb.styles import FONT_FAMILY
 
 
 def sidebar_link(text: str, href: str, icon: str):
@@ -63,8 +63,8 @@ def sidebar(
     )
 
 
-dashboard_sidebar = sidebar(
-    sidebar_link(text="Dashboard", href="/", icon="bar_chart_3"),
+jweb_sidebar = sidebar(
+    sidebar_link(text="Jweb", href="/", icon="bar_chart_3"),
     sidebar_link(text="Tools", href="/tools", icon="settings"),
     sidebar_link(text="Team", href="/team", icon="users"),
     logo_src="/logo.jpg",

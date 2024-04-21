@@ -1,7 +1,7 @@
-"""Mock data to populate the dashboard charts and tables."""
+"""Mock data to populate the jweb charts and tables."""
 
 import reflex as rx
-from dashboard.graphs import Area, Line
+from jweb.graphs import Area, Line
 
 stat_card_data = [
     [

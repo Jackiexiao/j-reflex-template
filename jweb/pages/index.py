@@ -1,7 +1,7 @@
 """The main index page."""
 
 import reflex as rx
-from dashboard.data import (
+from jweb.data import (
     line_chart_data,
     lines,
     pie_chart_data,
@@ -10,15 +10,15 @@ from dashboard.data import (
     stat_card_data,
     tabular_data,
 )
-from dashboard.graphs import (
+from jweb.graphs import (
     area_chart,
     line_chart,
     pie_chart,
     stat_card,
     table,
 )
-from dashboard.navigation import navbar
-from dashboard.template import template
+from jweb.navigation import navbar
+from jweb.template import template
 
 # Content in a grid layout.
 
@@ -55,7 +55,7 @@ def content_grid():
 @template
 def index() -> rx.Component:
     return rx.box(
-            navbar(heading="Dashboard"),
+            navbar(heading="Jweb"),
             rx.box(
                 content_grid(),
                 margin_top="calc(50px + 2em)",

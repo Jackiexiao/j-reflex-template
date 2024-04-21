@@ -1,14 +1,14 @@
-"""The main Dashboard App."""
+"""The main Jweb App."""
 
 from rxconfig import config
 
 import reflex as rx
 
-from dashboard.styles import BACKGROUND_COLOR, FONT_FAMILY, THEME, STYLESHEETS
+from jweb.styles import BACKGROUND_COLOR, FONT_FAMILY, THEME, STYLESHEETS
 
-from dashboard.pages.tools import tools
-from dashboard.pages.team import team
-from dashboard.pages.index import index
+from jweb.pages.tools import tools
+from jweb.pages.team import team
+from jweb.pages.index import index
 
 # Create app instance and add index page.
 app = rx.App(

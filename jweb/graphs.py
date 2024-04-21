@@ -1,4 +1,4 @@
-"""Library of customized graphs and tables for the dashboard."""
+"""Library of customized graphs and tables for the jweb."""
 import reflex as rx
 
 

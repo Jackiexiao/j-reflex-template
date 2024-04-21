@@ -1,4 +1,4 @@
-"""The style classes and constants for the Dashboard App."""
+"""The style classes and constants for the Jweb App."""
 
 from reflex.components.radix import themes as rx
 

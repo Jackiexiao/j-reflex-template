@@ -1,3 +1,3 @@
-# Dashboard Template
+# Jweb Template
 
-This is a Reflex starter template for a dashboard app.
+This is a Reflex starter template for a jweb app.

@@ -1,12 +1,12 @@
 import reflex as rx
 
-from dashboard.navigation import navbar
-from dashboard.template import template
+from jweb.navigation import navbar
+from jweb.template import template
 
 @template
-def tools() -> rx.Component:
+def team() -> rx.Component:
     return rx.box(
-            navbar(heading="Tools"),
+            navbar(heading="Team"),
             rx.box(
                 rx.text("placeholder"),
                 margin_top="calc(50px + 2em)",
@@ -14,3 +14,4 @@ def tools() -> rx.Component:
             ),
             padding_left="250px",
         )
+
